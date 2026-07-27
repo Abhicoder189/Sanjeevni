@@ -15,6 +15,7 @@ export default function ChatBox() {
   const [language, setLanguage] = useState("Auto Detect");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
+  const apiBaseUrl = import.meta.env.VITE_API_URL?.replace(/\/$/, "") ?? "";
 
   async function sendMessage() {
     if (!message.trim()) {
@@ -25,7 +26,7 @@ export default function ChatBox() {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/triage", {
+      const response = await fetch(`${apiBaseUrl}/api/triage`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
