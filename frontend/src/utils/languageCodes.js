@@ -1,0 +1,17 @@
+export const speechLanguageCodes = {
+  "Auto Detect": "en-IN",
+  English: "en-IN",
+  Hindi: "hi-IN",
+  Marathi: "mr-IN",
+  Gujarati: "gu-IN",
+  Punjabi: "pa-IN",
+  Bengali: "bn-IN",
+  Tamil: "ta-IN",
+  Telugu: "te-IN",
+  Kannada: "kn-IN",
+  Malayalam: "ml-IN",
+  Odia: "or-IN",
+  Assamese: "as-IN",
+  Urdu: "ur-IN",
+  Nepali: "ne-NP",
+};
